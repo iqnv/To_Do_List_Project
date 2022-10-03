@@ -17,13 +17,13 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 // rows in table
 const item1 = new Item({
-  name: "Welcome To Do List"
+  name: "Welcome ToDoList"
 });
 const item2 = new Item({
-  name: "Add in To Do List"
+  name: "Hit the "+" icon to add item"
 });
 const item3 = new Item({
-  name: "Delete from To Do List"
+  name: "Check the checkbox to delete items"
 });
 const listSchema = {
   name: String,
