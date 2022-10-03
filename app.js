@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const lodash = require("lodash");
 
 //mongo server
-mongoose.connect("mongodb+srv://admin-shivam:test123@cluster0.ogzyvyu.mongodb.net/todolistDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin-shivam123:test-123@cluster0.ogzyvyu.mongodb.net/todolistDB", {useNewUrlParser: true});
 const itemsSchema = mongoose.Schema({
   name: String
 });
@@ -122,4 +122,4 @@ app.post("/delete", function(req, res){
 app.listen(process.env.PORT || 3000, function()
 {
   console.log("Here we go");
-})
+});
